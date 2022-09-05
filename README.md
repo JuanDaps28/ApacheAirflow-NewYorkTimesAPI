@@ -14,12 +14,19 @@ https://developer.nytimes.com/get-started
 Before start running the docker compose file, it's necessary to create a .env file to set some environment variables inside the containers. In the .env file create the following variables:
 
 AIRFLOW_IMAGE_NAME=apache/airflow:2.3.0
+
 AIRFLOW_UID=50000
+
 _AIRFLOW_WWW_USER_USERNAME=??????????
+
 _AIRFLOW_WWW_USER_PASSWORD=??????????
+
 POSTGRES_USER=airflow
+
 POSTGRES_PASSWORD=airflow
+
 POSTGRES_DB=airflow
+
 API_KEY=??????????
 
 In the case of API_KEY variable, it's necessary to follow the steps explained in the New York Times api documentation (https://developer.nytimes.com/get-started) to create an api key that allows get the api data. Once you have the api key created, you can put its value in this variable.
